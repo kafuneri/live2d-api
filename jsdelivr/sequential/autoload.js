@@ -2,7 +2,7 @@
 // const live2d_path =
 //   "https://fastly.jsdelivr.net/gh/nova1751/live2d-widget@latest/";
 
-const live2d_path = './';
+const live2d_path = 'https://live2d.edgeone.site/';
 
 // 封装异步加载资源的方法
 function loadExternalResource(url, type) {
@@ -37,8 +37,8 @@ if (window.innerWidth >= 666) {
     initWidget({
       waifuPath: live2d_path + 'waifu-tips.json',
 
-      // apiPath: "https://live2d.fghrsh.net/api/",
-      cdnPath: live2d_path,
+       apiPath: "https://live2d.edgeone.site",
+    //  cdnPath: live2d_path,
 
       tools: [
         'hitokoto',
