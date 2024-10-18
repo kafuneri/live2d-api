@@ -37,8 +37,8 @@ if (window.innerWidth >= 666) {
     initWidget({
       waifuPath: live2d_path + 'waifu-tips.json',
 
-       apiPath: "https://live2d.edgeone.site/",
-    //  cdnPath: live2d_path,
+    //   apiPath: "https://live2d.edgeone.site/",
+      cdnPath: "./",
 
       tools: [
         'hitokoto',
