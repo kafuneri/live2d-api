@@ -2,7 +2,7 @@
 // const live2d_path =
 //   "https://fastly.jsdelivr.net/gh/nova1751/live2d-widget@latest/";
 
-const live2d_path = 'https://live2d.api.kafuchino.top/';
+const live2d_path = 'https://live2d.kafuchino.top/';
 
 // 封装异步加载资源的方法
 function loadExternalResource(url, type) {
@@ -24,8 +24,8 @@ function loadExternalResource(url, type) {
   });
 }
 
-// 加载 waifu.css live2d.min.js waifu-tips.js
-if (window.innerWidth >= 666) {
+// 加载 waifu.css live2d.min.js waifu-tips.js  window.innerWidth控制设备屏幕要多宽才会显示 手机666
+if (window.innerWidth >= 1024) {
   Promise.all([
     loadExternalResource(live2d_path + 'live2d.min.js', 'js'),
     loadExternalResource(
